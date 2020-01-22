@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://img.ideal-postcodes.co.uk/Ideal%20Postcodes%20Node%20Logo@3x.png" alt="Ideal Postcodes Node.js">
+  <img src="https://img.ideal-postcodes.co.uk/Ideal%20Postcodes%20Axios%20Logo@3x.png" alt="Ideal Postcodes Axios">
 </h1>
 
 > Axios backed JavaScript client for api.ideal-postcodes.co.uk
@@ -11,7 +11,7 @@
 [![install size](https://packagephobia.now.sh/badge?p=@ideal-postcodes/core-axios)](https://packagephobia.now.sh/result?p=@ideal-postcodes/core-axios)
 [![Release](https://github.com/ideal-postcodes/core-axios/workflows/Release/badge.svg)](https://github.com/ideal-postcodes/core-axios/actions)
 
-`@ideal-postcodes/core-axios` is the Axios backed client for api.ideal-postcodes.co.uk
+`@ideal-postcodes/core-axios` is the Axios backed client for api.ideal-postcodes.co.uk. Axios is a promise based HTTP client for the browser and node.js
 
 Our JavaScript client implements a common interface defined at [@ideal-postcodes/core-interface](https://github.com/ideal-postcodes/core-interface).
 
