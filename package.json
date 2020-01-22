@@ -1,0 +1,120 @@
+{
+  "name": "@ideal-postcodes/core-axios",
+  "version": "0.1.0",
+  "description": "Axios based client for api.ideal-postcodes.co.uk",
+  "author": {
+    "name": "Ideal Postcodes",
+    "email": "support@ideal-postcodes.co.uk",
+    "url": "https://ideal-postcodes.co.uk"
+  },
+  "bugs": {
+    "url": "https://github.com/ideal-postcodes/core-axios/issues",
+    "email": "support@ideal-postcodes.co.uk"
+  },
+  "homepage": "https://github.com/ideal-postcodes/core-axios",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ideal-postcodes/core-axios.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "semantic-release": "semantic-release --no-ci",
+    "test:watch": "NODE_ENV=test mocha --watch",
+    "test:nock:reload": "NODE_ENV=test RECORD=true mocha",
+    "test": "npm run lint && NODE_ENV=test nyc mocha",
+    "lint": "eslint lib/**/*.ts",
+    "build": "npm run lint && tsc",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "docs": "typedoc --mode file --out docs/ --name 'Ideal Postcodes Axios Based Client' --theme minimal --excludePrivate --hideGenerator lib/",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "prettier": {
+    "editorconfig": true,
+    "trailingComma": "es5"
+  },
+  "nyc": {
+    "include": [
+      "lib/**/*.ts",
+      "generate/**/*.ts"
+    ],
+    "exclude": [
+      "dist/*",
+      "**/*.d.ts",
+      "generate/index.ts"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "all": true
+  },
+  "mocha": {
+    "extension": [
+      "ts"
+    ],
+    "exit": true,
+    "fullTrace": true,
+    "require": [
+      "ts-node/register",
+      "source-map-support/register"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0"
+  },
+  "keywords": [
+    "API",
+    "Node.js",
+    "Axios",
+    "UK",
+    "Address",
+    "Postcode",
+    "Search",
+    "Ideal Postcodes"
+  ],
+  "release": {
+    "extends": "@cablanchard/semantic-release/dist/npm"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@ideal-postcodes/core-interface": "~1.4.0",
+    "axios": "~0.19.2"
+  },
+  "devDependencies": {
+    "@cablanchard/eslint-config": "~1.1.1",
+    "@cablanchard/semantic-release": "~1.3.0",
+    "@cablanchard/tsconfig": "1.0.0",
+    "@ideal-postcodes/api-fixtures": "~0.1.0",
+    "@ideal-postcodes/api-typings": "~1.1.0",
+    "@types/chai": "~4.2.0",
+    "@types/mocha": "~5.2.7",
+    "@types/nock": "~11.1.0",
+    "@types/node": "~13.1.0",
+    "@types/prettier": "~1.19.0",
+    "@types/sinon": "~7.5.0",
+    "chai": "~4.2.0",
+    "codecov": "~3.6.1",
+    "eslint": "~6.8.0",
+    "mocha": "~7.0.0",
+    "nock": "11.7.2",
+    "nyc": "~15.0.0",
+    "prettier": "~1.19.1",
+    "semantic-release": "~15.14.0",
+    "sinon": "~8.0.0",
+    "source-map-support": "~0.5.10",
+    "ts-node": "~8.6.1",
+    "typedoc": "~0.16.2",
+    "typescript": "~3.7.2"
+  }
+}

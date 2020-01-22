@@ -1,0 +1,50 @@
+---
+default_steps: &default_steps
+  working_directory: ~/repo
+  steps:
+    - checkout
+    - restore_cache:
+        keys:
+          - v1-dependencies-{{ checksum "package-lock.json" }}
+    - run: npm install
+    - save_cache:
+        paths:
+          - node_modules
+        key: v1-dependencies-{{ checksum "package-lock.json" }}
+    - run: npm test
+    - run: npm run coverage
+
+version: 2
+jobs:
+  node_8:
+    <<: *default_steps
+    docker:
+      - image: circleci/node:8
+  node_10:
+    <<: *default_steps
+    docker:
+      - image: circleci/node:10
+  node_12:
+    <<: *default_steps
+    docker:
+      - image: circleci/node:12
+
+workflows:
+  version: 2
+  push:
+    jobs:
+      - node_8
+      - node_10
+      - node_12
+  scheduled:
+    jobs:
+      - node_8
+      - node_10
+      - node_12
+    triggers:
+      - schedule:
+          cron: "8 8 * * 1-5"
+          filters:
+            branches:
+              only:
+                - master
