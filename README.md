@@ -40,8 +40,6 @@ In depth client documentation can be found at [core-interface.ideal-postcodes.de
 - [Install](#install)
 - [Instantiate](#instantiate) and [Use](#use) client
 - [Catch Errors](#catch-errors)
-- [Configure Agent](#configure-http-agent)
-  - [Proxy HTTP Requests](#proxy-requests)
 
 #### Install
 
