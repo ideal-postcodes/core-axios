@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/ideal-postcodes/core-axios/compare/1.0.0...1.0.1) (2020-01-22)
+
+
+### Bug Fixes
+
+* **README:** Fix docs ([1a45721](https://github.com/ideal-postcodes/core-axios/commit/1a45721))
+
 # 1.0.0 (2020-01-22)
 
 
