@@ -48,10 +48,6 @@ describe("Client", () => {
       );
       assert.equal(customClient.timeout, options.timeout);
     });
-
-    it("assigns user agent header", () => {
-      assert.match(client.header["User-Agent"], /Core-Axios/i);
-    });
   });
 
   describe("Config", () => {

@@ -8,11 +8,6 @@ import {
 } from "@ideal-postcodes/core-interface";
 import { Agent } from "./agent";
 
-/**
- * Default user agent string
- */
-const USER_AGENT = `IdealPostcodes ideal-postcodes/core-axios`;
-
 export interface Config {
   /**
    * Use TLS. Defaults to `true`
@@ -50,7 +45,7 @@ export class Client extends CoreInterface {
    */
   constructor(config: Config) {
     const agent = new Agent();
-    const header = { "User-Agent": USER_AGENT };
+    const header = {};
     const tls = config.tls === undefined ? TLS : config.tls;
     const baseUrl = config.baseUrl === undefined ? API_URL : config.baseUrl;
     const version = config.version === undefined ? VERSION : config.version;
