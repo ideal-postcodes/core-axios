@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/ideal-postcodes/core-axios/compare/1.0.1...1.0.2) (2020-01-22)
+
+
+### Bug Fixes
+
+* **Headers:** Drop default user agent ([6c7ddd6](https://github.com/ideal-postcodes/core-axios/commit/6c7ddd6))
+
 ## [1.0.1](https://github.com/ideal-postcodes/core-axios/compare/1.0.0...1.0.1) (2020-01-22)
 
 
