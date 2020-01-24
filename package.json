@@ -100,7 +100,7 @@
     "@types/chai": "~4.2.0",
     "@types/mocha": "~5.2.7",
     "@types/nock": "~11.1.0",
-    "@types/node": "~13.1.0",
+    "@types/node": "~13.5.0",
     "@types/prettier": "~1.19.0",
     "@types/sinon": "~7.5.0",
     "chai": "~4.2.0",
