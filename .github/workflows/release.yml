@@ -27,9 +27,6 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-${{ matrix.node-version }}
 
-      - name: Apply npm token
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-
       - name: Install
         run: npm install
 
