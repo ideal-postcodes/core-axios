@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ideal-postcodes/core-axios/compare/1.0.2...1.1.0) (2020-02-07)
+
+
+### Features
+
+* **core-interface:** Upgrade to 1.5.0 ([aeffba7](https://github.com/ideal-postcodes/core-axios/commit/aeffba7))
+
 ## [1.0.2](https://github.com/ideal-postcodes/core-axios/compare/1.0.1...1.0.2) (2020-01-22)
 
 
