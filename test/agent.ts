@@ -207,15 +207,9 @@ describe("Agent", () => {
     it("wraps non-HTTP errors", async () => {
       const url = "http://www.foo.com/";
 
-      const response: unknown = {
-        headers: {},
-        body: Buffer.from("{}"),
-        url,
-      };
-
       const genericError = new Error("Generic error");
 
-      const stub = sinon.stub(agent.Axios, "request").rejects(genericError);
+      sinon.stub(agent.Axios, "request").rejects(genericError);
 
       try {
         await agent.http({
@@ -238,15 +232,9 @@ describe("Agent", () => {
     it("wraps non-HTTP got errors from HTTP requests with body", async () => {
       const url = "http://www.foo.com/";
 
-      const response: unknown = {
-        headers: {},
-        body: Buffer.from("{}"),
-        url,
-      };
-
       const genericError = new Error("Generic error");
 
-      const stub = sinon.stub(agent.Axios, "request").rejects(genericError);
+      sinon.stub(agent.Axios, "request").rejects(genericError);
 
       try {
         await agent.http({
