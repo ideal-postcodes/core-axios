@@ -65,6 +65,6 @@ export class Client extends CoreInterface {
       timeout,
       header: { ...header, ...config.header },
     };
-    super({ agent, header, ...interfaceConfig });
+    super({ agent, ...interfaceConfig });
   }
 }
