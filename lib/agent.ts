@@ -49,7 +49,7 @@ export const toHeader: ToHeader = gotHeaders =>
  */
 const toHttpResponse = (
   httpRequest: HttpRequest,
-  response: AxiosResponse<object>
+  response: AxiosResponse<any>
 ): HttpResponse => ({
   httpRequest,
   body: response.data,
