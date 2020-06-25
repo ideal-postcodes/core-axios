@@ -4,7 +4,7 @@
 
 > Axios backed JavaScript client for api.ideal-postcodes.co.uk
 
-[![CircleCI](https://circleci.com/gh/ideal-postcodes/core-axios/tree/master.svg?style=svg)](https://circleci.com/gh/ideal-postcodes/core-axios/tree/master)
+![CI](https://github.com/ideal-postcodes/core-axios/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/ideal-postcodes/core-axios/branch/master/graph/badge.svg)](https://codecov.io/gh/ideal-postcodes/core-axios)
 [![Dependency Status](https://david-dm.org/ideal-postcodes/core-axios.svg)](https://david-dm.org/ideal-postcodes/core-axios)
 [![npm version](https://badge.fury.io/js/%40ideal-postcodes%2Fcore-axios.svg)](https://www.npmjs.com/package/@ideal-postcodes/core-axios)
