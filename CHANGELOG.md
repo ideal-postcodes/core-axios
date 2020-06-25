@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/ideal-postcodes/core-axios/compare/1.1.0...2.0.0) (2020-06-25)
+
+
+### chore
+
+* **Node:** Drop explicit support for Node 8 ([3a41f25](https://github.com/ideal-postcodes/core-axios/commit/3a41f25))
+* **Node:** Drop node 8 support, add 14 ([e7064ce](https://github.com/ideal-postcodes/core-axios/commit/e7064ce))
+
+
+### BREAKING CHANGES
+
+* **Node:** Node 8 no longer supported
+* **Node:** Node 8 no longer forms part of CI testing
+
 # [1.1.0](https://github.com/ideal-postcodes/core-axios/compare/1.0.2...1.1.0) (2020-02-07)
 
 
