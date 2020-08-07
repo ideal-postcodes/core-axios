@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/ideal-postcodes/core-axios/compare/2.0.0...2.1.0) (2020-08-07)
+
+
+### Features
+
+* **Core Interface:** Bump to 1.6.0 ([0bda2ce](https://github.com/ideal-postcodes/core-axios/commit/0bda2ce))
+
 # [2.0.0](https://github.com/ideal-postcodes/core-axios/compare/1.1.0...2.0.0) (2020-06-25)
 
 
