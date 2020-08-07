@@ -1,6 +1,6 @@
 {
   "name": "@ideal-postcodes/core-axios",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Axios based client for api.ideal-postcodes.co.uk",
   "author": {
     "name": "Ideal Postcodes",
