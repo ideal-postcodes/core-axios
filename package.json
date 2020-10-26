@@ -18,19 +18,21 @@
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "module": "esm/index.js",
   "scripts": {
     "semantic-release": "semantic-release --no-ci",
     "test:watch": "NODE_ENV=test mocha --watch",
     "test:nock:reload": "NODE_ENV=test RECORD=true mocha",
     "test": "npm run lint && NODE_ENV=test nyc mocha",
     "lint": "eslint lib/**/*.ts",
-    "build": "npm run lint && tsc",
+    "build": "tsc && tsc -p tsconfig.esm.json",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "docs": "typedoc --mode file --out docs/ --name 'Ideal Postcodes Axios Based Client' --theme minimal --excludePrivate --hideGenerator lib/",
     "prepublishOnly": "npm run test && npm run build"
   },
   "files": [
-    "dist"
+    "dist",
+    "esm"
   ],
   "prettier": {
     "editorconfig": true,
