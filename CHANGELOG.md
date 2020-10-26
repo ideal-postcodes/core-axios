@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/ideal-postcodes/core-axios/compare/2.1.0...2.2.0) (2020-10-26)
+
+
+### Features
+
+* **ESM:** Add ESM Build ([0a2780e](https://github.com/ideal-postcodes/core-axios/commit/0a2780e))
+
 # [2.1.0](https://github.com/ideal-postcodes/core-axios/compare/2.0.0...2.1.0) (2020-08-07)
 
 
