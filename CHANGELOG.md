@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/ideal-postcodes/core-axios/compare/2.2.0...2.2.1) (2020-11-20)
+
+
+### Bug Fixes
+
+* **ESM:** Target ESNext ([c15fb2f](https://github.com/ideal-postcodes/core-axios/commit/c15fb2f))
+
 # [2.2.0](https://github.com/ideal-postcodes/core-axios/compare/2.1.0...2.2.0) (2020-10-26)
 
 
