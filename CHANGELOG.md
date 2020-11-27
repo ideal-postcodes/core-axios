@@ -1,3 +1,10 @@
+## [2.2.2](https://github.com/ideal-postcodes/core-axios/compare/2.2.1...2.2.2) (2020-11-27)
+
+
+### Bug Fixes
+
+* **tsconfig:** Bump tsconfig ([962ccfa](https://github.com/ideal-postcodes/core-axios/commit/962ccfa))
+
 ## [2.2.1](https://github.com/ideal-postcodes/core-axios/compare/2.2.0...2.2.1) (2020-11-20)
 
 
