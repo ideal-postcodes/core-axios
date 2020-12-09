@@ -100,7 +100,7 @@
     "@ideal-postcodes/api-fixtures": "~1.2.0",
     "@ideal-postcodes/api-typings": "~2.0.0",
     "@types/chai": "~4.2.0",
-    "@types/mocha": "~8.0.0",
+    "@types/mocha": "~8.2.0",
     "@types/nock": "~11.1.0",
     "@types/node": "~14.14.0",
     "@types/prettier": "~2.1.0",
