@@ -36,6 +36,7 @@ describe("Client", () => {
         version: "v0",
         strictAuthorisation: true,
         timeout: 2,
+        tags: ["foo"],
       };
       const customClient = new Client(options);
       assert.equal(customClient.api_key, options.api_key);
@@ -47,6 +48,7 @@ describe("Client", () => {
         options.strictAuthorisation
       );
       assert.equal(customClient.timeout, options.timeout);
+      assert.deepEqual(customClient.tags, ["foo"]);
     });
   });
 
@@ -64,6 +66,7 @@ describe("Client", () => {
         timeout: 2,
         agent,
         header,
+        tags: [],
       };
       const interfaceConfig: InterfaceConfig = options;
       const config: Config = options;

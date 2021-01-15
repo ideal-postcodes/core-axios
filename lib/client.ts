@@ -37,6 +37,10 @@ export interface Config {
    * String map specifying default headers
    */
   header?: Record<string, string>;
+  /**
+   * Optional tags to append to helper requests
+   */
+  tags?: string[];
 }
 
 export class Client extends CoreInterface {
@@ -54,6 +58,7 @@ export class Client extends CoreInterface {
         ? STRICT_AUTHORISATION
         : config.strictAuthorisation;
     const timeout = config.timeout === undefined ? TIMEOUT : config.timeout;
+    const tags = config.tags || [];
 
     const { api_key } = config;
     const interfaceConfig = {
@@ -63,6 +68,7 @@ export class Client extends CoreInterface {
       version,
       strictAuthorisation,
       timeout,
+      tags,
       header: { ...header, ...config.header },
     };
     super({ agent, ...interfaceConfig });
