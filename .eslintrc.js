@@ -1,3 +1,10 @@
 module.exports = {
-  extends: "@cablanchard",
+  root: true,
+  extends: ["@cablanchard", "plugin:compat/recommended"],
+  settings: {
+    polyfills: ["Promise"],
+  },
+  env: {
+    browser: true,
+  },
 };
