@@ -67,16 +67,25 @@ const client = new Client({ api_key: "iddqd" });
 #### Use
 
 ```javascript
-const addresses = await client.lookupPostcode({ postcode: "SW1A2AA" });
+const { lookupPostcode } = require("@ideal-postcodes/core-interface");
+
+// or, if applicable,
+import { lookupPostcode } from "@ideal-postcodes/core-interface"
+const addresses = await lookupPostcode({ client, postcode: "SW1A2AA" });
 ```
 
 #### Catch Errors
 
 ```javascript
-const { IdpcRequestFailedError } = Client.errors;
+const { errors, lookupAddress } = require("@ideal-postcodes/core-interface");
+
+// or, if applicable,
+import { errors, lookupAddress } from "@ideal-postcodes/core-interface"
+
+const { IdpcRequestFailedError } = errors;
 
 try {
-  await client.lookupAddress({ query: "10 downing street" });
+  await lookupAddress({ client, query: "10 downing street" });
 } catch (error) {
   if (error instanceof IdpcRequestFailedError) {
     // IdpcRequestFailedError indicates a 402 response code

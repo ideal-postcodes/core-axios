@@ -2,11 +2,7 @@ import { assert } from "chai";
 import { Client, Config } from "../lib/client";
 import { Agent } from "../lib/agent";
 import {
-  TLS,
-  API_URL,
-  VERSION,
-  TIMEOUT,
-  STRICT_AUTHORISATION,
+  defaults,
   Config as InterfaceConfig,
 } from "@ideal-postcodes/core-interface";
 
@@ -20,12 +16,12 @@ describe("Client", () => {
     });
 
     it("assigns default config values", () => {
-      assert.equal(client.api_key, api_key);
-      assert.equal(client.tls, TLS);
-      assert.equal(client.baseUrl, API_URL);
-      assert.equal(client.version, VERSION);
-      assert.equal(client.strictAuthorisation, STRICT_AUTHORISATION);
-      assert.equal(client.timeout, TIMEOUT);
+      assert.equal(client.config.api_key, api_key);
+      assert.equal(client.config.tls, defaults.tls);
+      assert.equal(client.config.baseUrl, defaults.baseUrl);
+      assert.equal(client.config.version, defaults.version);
+      assert.equal(client.config.strictAuthorisation, defaults.strictAuthorisation);
+      assert.equal(client.config.timeout, defaults.timeout);
     });
 
     it("allows default config values to be overwritten", () => {
@@ -39,16 +35,16 @@ describe("Client", () => {
         tags: ["foo"],
       };
       const customClient = new Client(options);
-      assert.equal(customClient.api_key, options.api_key);
-      assert.equal(customClient.tls, options.tls);
-      assert.equal(customClient.baseUrl, options.baseUrl);
-      assert.equal(customClient.version, options.version);
+      assert.equal(customClient.config.api_key, options.api_key);
+      assert.equal(customClient.config.tls, options.tls);
+      assert.equal(customClient.config.baseUrl, options.baseUrl);
+      assert.equal(customClient.config.version, options.version);
       assert.equal(
-        customClient.strictAuthorisation,
+        customClient.config.strictAuthorisation,
         options.strictAuthorisation
       );
-      assert.equal(customClient.timeout, options.timeout);
-      assert.deepEqual(customClient.tags, ["foo"]);
+      assert.equal(customClient.config.timeout, options.timeout);
+      assert.deepEqual(customClient.config.tags, ["foo"]);
     });
   });
 
