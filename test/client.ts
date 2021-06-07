@@ -4,7 +4,7 @@ import { Agent } from "../lib/agent";
 import {
   defaults,
   Config as InterfaceConfig,
-} from "@ideal-postcodes/core-interface";
+} from "../lib";
 
 describe("Client", () => {
   describe("instantiation", () => {

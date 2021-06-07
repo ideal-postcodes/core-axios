@@ -2,7 +2,7 @@ import * as sinon from "sinon";
 import { assert } from "chai";
 import { Agent, toHeader } from "../lib/agent";
 import { AxiosResponse } from "axios";
-import { errors } from "@ideal-postcodes/core-interface";
+import { errors } from "../lib";
 
 const { IdealPostcodesError } = errors;
 

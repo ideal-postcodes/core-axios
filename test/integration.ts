@@ -1,6 +1,6 @@
 import { assert } from "chai";
 import { Client } from "../lib/client";
-import { ping, lookupPostcode, errors } from "@ideal-postcodes/core-interface";
+import { ping, lookupPostcode, errors } from "../lib";
 import { loadHttpFixtures } from "./fixtures/index";
 
 loadHttpFixtures(__filename);
