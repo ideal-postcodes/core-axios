@@ -54,9 +54,6 @@ npm install @ideal-postcodes/core-axios
 #### Instantiate
 
 ```javascript
-const { Client } = require("@ideal-postcodes/core-axios");
-
-// or, if applicable,
 import { Client } from "@ideal-postcodes/core-axios"
 
 const client = new Client({ api_key: "iddqd" });
@@ -67,27 +64,20 @@ const client = new Client({ api_key: "iddqd" });
 #### Use
 
 ```javascript
-const { lookupPostcode } = require("@ideal-postcodes/core-interface");
+import { lookupPostcode } from "@ideal-postcodes/core-axios"
 
-// or, if applicable,
-import { lookupPostcode } from "@ideal-postcodes/core-interface"
 const addresses = await lookupPostcode({ client, postcode: "SW1A2AA" });
 ```
 
 #### Catch Errors
 
 ```javascript
-const { errors, lookupAddress } = require("@ideal-postcodes/core-interface");
-
-// or, if applicable,
-import { errors, lookupAddress } from "@ideal-postcodes/core-interface"
-
-const { IdpcRequestFailedError } = errors;
+import { errors, lookupAddress } from "@ideal-postcodes/core-axios"
 
 try {
   await lookupAddress({ client, query: "10 downing street" });
 } catch (error) {
-  if (error instanceof IdpcRequestFailedError) {
+  if (error instanceof errors.IdpcRequestFailedError) {
     // IdpcRequestFailedError indicates a 402 response code
     // Possibly the key balance has been depleted
   }
