@@ -1,3 +1,23 @@
+# [3.0.0](https://github.com/ideal-postcodes/core-axios/compare/2.2.4...3.0.0) (2021-06-08)
+
+
+### Features
+
+* **Core Interface:** Update to Version 2 ([a93bb13](https://github.com/ideal-postcodes/core-axios/commit/a93bb13))
+
+
+### BREAKING CHANGES
+
+* **Core Interface:** - Package now exports a `defaults` object
+- Client.defaults has been removed
+- All client config is now stored in `client.config`
+- All resources have been removed from the client. Instead retrieve
+these from the library and inject the client. E.g.
+`client.postcodes.retrieve` becomes `postcodes.retrieve(client, ...)`
+- Helper methods (like lookupPostcode, ping) have been removed from the client.
+Instead retrieve these from the library and inject the client. E.g.
+`client.lookupPostcode` becomes `lookupPostcode(client, ...)`
+
 ## [2.2.4](https://github.com/ideal-postcodes/core-axios/compare/2.2.3...2.2.4) (2021-01-15)
 
 
