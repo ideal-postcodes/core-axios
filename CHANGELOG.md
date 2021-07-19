@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/ideal-postcodes/core-axios/compare/3.0.0...3.0.1) (2021-07-19)
+
+
+### Bug Fixes
+
+* **Deps:** Bump core-interface ([bb5fc87](https://github.com/ideal-postcodes/core-axios/commit/bb5fc87))
+
 # [3.0.0](https://github.com/ideal-postcodes/core-axios/compare/2.2.4...3.0.0) (2021-06-08)
 
 
