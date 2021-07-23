@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/ideal-postcodes/core-axios/compare/3.0.2...3.0.3) (2021-07-23)
+
+
+### Bug Fixes
+
+* **Build:** Target ES2020 ([5e3d8fb](https://github.com/ideal-postcodes/core-axios/commit/5e3d8fb))
+
 ## [3.0.2](https://github.com/ideal-postcodes/core-axios/compare/3.0.1...3.0.2) (2021-07-23)
 
 
