@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/ideal-postcodes/core-axios/compare/3.0.3...3.0.4) (2021-09-07)
+
+
+### Bug Fixes
+
+* **Bump:** Update axios ([0d0abd6](https://github.com/ideal-postcodes/core-axios/commit/0d0abd6))
+
 ## [3.0.3](https://github.com/ideal-postcodes/core-axios/compare/3.0.2...3.0.3) (2021-07-23)
 
 
