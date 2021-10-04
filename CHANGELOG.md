@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/ideal-postcodes/core-axios/compare/3.0.4...3.0.5) (2021-10-04)
+
+
+### Bug Fixes
+
+* **deps:** bump axios from 0.21.3 to 0.22.0 ([#430](https://github.com/ideal-postcodes/core-axios/issues/430)) ([4295410](https://github.com/ideal-postcodes/core-axios/commit/4295410))
+
 ## [3.0.4](https://github.com/ideal-postcodes/core-axios/compare/3.0.3...3.0.4) (2021-09-07)
 
 
