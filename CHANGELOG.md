@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/ideal-postcodes/core-axios/compare/3.0.5...3.0.6) (2021-10-15)
+
+
+### Bug Fixes
+
+* **axios:** Pin to 0.21 ([e8649c7](https://github.com/ideal-postcodes/core-axios/commit/e8649c7))
+
 ## [3.0.5](https://github.com/ideal-postcodes/core-axios/compare/3.0.4...3.0.5) (2021-10-04)
 
 
