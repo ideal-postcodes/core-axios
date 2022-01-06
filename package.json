@@ -23,7 +23,7 @@
     "semantic-release": "semantic-release --no-ci",
     "test:watch": "NODE_ENV=test mocha --watch",
     "test:nock:reload": "NODE_ENV=test RECORD=true mocha",
-    "test": "npm run lint && NODE_ENV=test nyc mocha",
+    "test": "NODE_ENV=test nyc mocha",
     "lint": "eslint lib/**/*.ts",
     "build": "tsc && tsc -p tsconfig.esm.json",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
