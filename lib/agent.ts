@@ -31,7 +31,7 @@ interface ToHeader {
  *
  * @hidden
  */
-export const toHeader: ToHeader = gotHeaders =>
+export const toHeader: ToHeader = (gotHeaders) =>
   Object.keys(gotHeaders).reduce<Record<string, string>>((headers, key) => {
     const val = gotHeaders[key];
     if (typeof val === "string") {
@@ -99,7 +99,7 @@ export class Agent implements IAgent {
       data: body,
       timeout,
     })
-      .then(response => toHttpResponse(httpRequest, response))
+      .then((response) => toHttpResponse(httpRequest, response))
       .catch(handleError);
   }
 
@@ -112,7 +112,7 @@ export class Agent implements IAgent {
       params: query,
       timeout,
     })
-      .then(response => toHttpResponse(httpRequest, response))
+      .then((response) => toHttpResponse(httpRequest, response))
       .catch(handleError);
   }
 
