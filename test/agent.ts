@@ -221,7 +221,9 @@ describe("Agent", () => {
         });
       } catch (error) {
         assert.instanceOf(error, IdealPostcodesError);
+        // @ts-ignore
         assert.equal(error.metadata.axios, genericError);
+        // @ts-ignore
         assert.equal(error.message, "[Error] Generic error");
         return;
       }
@@ -247,7 +249,9 @@ describe("Agent", () => {
         });
       } catch (error) {
         assert.instanceOf(error, IdealPostcodesError);
+        // @ts-ignore
         assert.equal(error.metadata.axios, genericError);
+        // @ts-ignore
         assert.equal(error.message, "[Error] Generic error");
         return;
       }
