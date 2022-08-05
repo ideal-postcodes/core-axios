@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/ideal-postcodes/core-axios/compare/4.0.1...4.1.0) (2022-08-05)
+
+
+### Features
+
+* **Core-Interface:** Update to 3.2.0 ([42ceaa1](https://github.com/ideal-postcodes/core-axios/commit/42ceaa1))
+
 ## [4.0.1](https://github.com/ideal-postcodes/core-axios/compare/4.0.0...4.0.1) (2022-04-04)
 
 
