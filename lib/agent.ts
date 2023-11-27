@@ -1,4 +1,4 @@
-import Axios from "axios";
+import Axios, { AxiosResponseHeaders, RawAxiosResponseHeaders } from "axios";
 import { AxiosResponse, AxiosInstance } from "axios";
 import {
   Agent as IAgent,
@@ -15,15 +15,15 @@ const {
 } = errors;
 
 // @hidden
-interface GotHeaders {
-  [key: string]: string | string[] | undefined;
-}
+//interface GotHeaders {
+//  [key: string]: string | string[] | undefined;
+//}
 
 /**
  * @hidden
  */
 interface ToHeader {
-  (gotHeaders: GotHeaders): Record<string, string>;
+  (gotHeaders: RawAxiosResponseHeaders | AxiosResponseHeaders): Record<string, string>;
 }
 
 /**
