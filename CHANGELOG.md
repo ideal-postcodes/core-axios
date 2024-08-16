@@ -1,3 +1,10 @@
+## [4.1.3](https://github.com/ideal-postcodes/core-axios/compare/4.1.2...4.1.3) (2024-08-16)
+
+
+### Bug Fixes
+
+* **axios:** Bump axios lib to version 1.7.4 ([278d8ef](https://github.com/ideal-postcodes/core-axios/commit/278d8ef))
+
 ## [4.1.2](https://github.com/ideal-postcodes/core-axios/compare/4.1.1...4.1.2) (2023-11-27)
 
 
