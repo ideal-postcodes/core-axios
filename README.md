@@ -59,7 +59,8 @@ import { Client } from "@ideal-postcodes/core-axios"
 const client = new Client({ api_key: "iddqd" });
 ```
 
-[Configuration options](https://core-interface.ideal-postcodes.dev/interfaces/client.config)
+[Configuration options](https://core-interface.ideal-postcodes.dev/interfaces/Client.Config.html#baseUrl)
+
 
 #### Use
 
