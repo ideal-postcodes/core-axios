@@ -1,3 +1,12 @@
+## [4.1.4](https://github.com/ideal-postcodes/core-axios/compare/4.1.3...4.1.4) (2025-03-24)
+
+
+### Bug Fixes
+
+* **axios:** Update axios to 1.8.4 ([aed7972](https://github.com/ideal-postcodes/core-axios/commit/aed7972))
+* **Release:** Trigger new release ([adf68be](https://github.com/ideal-postcodes/core-axios/commit/adf68be))
+* **Release:** Update release credentials ([8f5ad25](https://github.com/ideal-postcodes/core-axios/commit/8f5ad25))
+
 ## [4.1.3](https://github.com/ideal-postcodes/core-axios/compare/4.1.2...4.1.3) (2024-08-16)
 
 
