@@ -8,11 +8,13 @@ updates:
     versioning-strategy: auto
     groups:
       dev-dependencies:
+        patterns:
+          - "*"
         dependency-type: "development"
-        update-type: "minor"
       production-dependencies:
+        patterns:
+          - "*"
         dependency-type: "production"
-        update-type: "minor"
     commit-message:
       prefix: "fix"
       prefix-development: "chore"
