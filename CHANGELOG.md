@@ -1,3 +1,10 @@
+## [4.1.5](https://github.com/ideal-postcodes/core-axios/compare/4.1.4...4.1.5) (2025-03-24)
+
+
+### Bug Fixes
+
+* **relase:** Remove fetch-depth ([b87690c](https://github.com/ideal-postcodes/core-axios/commit/b87690c))
+
 ## [4.1.4](https://github.com/ideal-postcodes/core-axios/compare/4.1.3...4.1.4) (2025-03-24)
 
 
