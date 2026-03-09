@@ -1,3 +1,12 @@
+## [4.1.7](https://github.com/ideal-postcodes/core-axios/compare/4.1.6...4.1.7) (2026-03-09)
+
+
+### Bug Fixes
+
+* **deps:** bump axios from 1.12.0 to 1.13.6 ([f3dfbd8](https://github.com/ideal-postcodes/core-axios/commit/f3dfbd8c77ec4e5fc983d08a1b2d5bc8a579b7df))
+* **Release:** Migrate to OIDC connect ([16ed405](https://github.com/ideal-postcodes/core-axios/commit/16ed4053a9ad0b3c9f40f168cf61dc535c7aac42))
+* **Release:** Update semantic release ([3052879](https://github.com/ideal-postcodes/core-axios/commit/3052879e6506843a14c80a5237ab23d98e1d4f3f))
+
 ## [4.1.6](https://github.com/ideal-postcodes/core-axios/compare/4.1.5...4.1.6) (2025-09-15)
 
 
