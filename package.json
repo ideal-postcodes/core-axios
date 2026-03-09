@@ -101,7 +101,7 @@
   "license": "MIT",
   "dependencies": {
     "@ideal-postcodes/core-interface": "~3.2.1",
-    "axios": "~1.12.0"
+    "axios": "~1.13.6"
   },
   "devDependencies": {
     "@cablanchard/semantic-release": "~2.0.0",
