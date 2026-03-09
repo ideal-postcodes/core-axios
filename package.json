@@ -98,6 +98,10 @@
       }
     ]
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "license": "MIT",
   "dependencies": {
     "@ideal-postcodes/core-interface": "~3.2.1",

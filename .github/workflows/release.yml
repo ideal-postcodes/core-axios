@@ -11,11 +11,12 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    # https://docs.npmjs.com/trusted-publishers#github-actions-configuration
     permissions:
-      contents: write
-      issues: write
-      pull-requests: write
-      packages: write
+      id-token: write      # Required for npm OIDC
+      contents: write      # Required for semantic-release to create releases/tags
+      issues: write        # Required for semantic-release to comment on issues
+      pull-requests: write # Required for semantic-release to comment on PRs
 
     steps:
       - name: Checkout
@@ -29,6 +30,7 @@ jobs:
         with:
           node-version: 'lts/*'
           cache: 'npm'
+          registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
         run: npm ci
@@ -40,7 +42,7 @@ jobs:
         run: npm run build
 
       - name: Semantic Release
-        run: npm run semantic-release
+        # Use npx to ensure npm OIDC token is passed correctly
+        run: npx semantic-release --no-ci
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
