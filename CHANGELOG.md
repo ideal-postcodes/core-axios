@@ -1,3 +1,10 @@
+## [4.1.8](https://github.com/ideal-postcodes/core-axios/compare/4.1.7...4.1.8) (2026-05-11)
+
+
+### Bug Fixes
+
+* **deps:** address axios security vulnerability by bumping to 1.16.0 ([dd9a1f4](https://github.com/ideal-postcodes/core-axios/commit/dd9a1f41369bc3fc851176828de077d0b4fc134d))
+
 ## [4.1.7](https://github.com/ideal-postcodes/core-axios/compare/4.1.6...4.1.7) (2026-03-09)
 
 
