@@ -95,7 +95,7 @@
   "license": "MIT",
   "dependencies": {
     "@ideal-postcodes/core-interface": "~3.2.1",
-    "axios": "~1.13.6"
+    "axios": "~1.16.0"
   },
   "devDependencies": {
     "@cablanchard/tsconfig": "2.0.0",
