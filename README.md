@@ -20,14 +20,14 @@ Our JavaScript client implements a common interface defined at [@ideal-postcodes
 
 High level client documentation can be found at [core-interface](https://github.com/ideal-postcodes/core-interface/blob/master/README.md).
 
-In depth client documentation can be found at [core-interface.ideal-postcodes.dev](https://core-interface.ideal-postcodes.dev).
+In depth client documentation can be found in the [core-interface README](https://github.com/ideal-postcodes/core-interface#documentation).
 
 ## Links
 
 - [Configuration & Usage](#configuration--usage)
 - [Quickstart](#quickstart)
 - [Client Documentation](https://github.com/ideal-postcodes/core-interface/blob/master/README.md)
-- [In Depth Client Documentation](https://core-interface.ideal-postcodes.dev/#documentation)
+- [In Depth Client Documentation](https://github.com/ideal-postcodes/core-interface#documentation)
 - [npm Module](https://www.npmjs.com/package/@ideal-postcodes/core-axios)
 - [GitHub Repository](https://github.com/ideal-postcodes/core-axios)
 
@@ -59,7 +59,7 @@ import { Client } from "@ideal-postcodes/core-axios"
 const client = new Client({ api_key: "iddqd" });
 ```
 
-[Configuration options](https://core-interface.ideal-postcodes.dev/interfaces/Client.Config.html#baseUrl)
+[Configuration options](https://github.com/ideal-postcodes/core-interface/blob/master/lib/client.ts)
 
 
 #### Use

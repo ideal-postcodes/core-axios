@@ -9,7 +9,7 @@ import {
 
 const {
   /**
-   * Ideal Postcodes base error class implemented in [core-interface](https://core-interface.ideal-postcodes.dev/classes/idealpostcodeserror.html)
+   * Ideal Postcodes base error class implemented in [core-interface](https://github.com/ideal-postcodes/core-interface/blob/master/lib/error.ts)
    */
   IdealPostcodesError,
 } = errors;
