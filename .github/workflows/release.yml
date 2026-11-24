@@ -17,9 +17,7 @@ jobs:
     # https://docs.npmjs.com/trusted-publishers#github-actions-configuration
     permissions:
       id-token: write      # Required for npm OIDC
-      contents: write      # Required for semantic-release to create releases/tags
-      issues: write        # Required for semantic-release to comment on issues
-      pull-requests: write # Required for semantic-release to comment on PRs
+      contents: read
 
     steps:
       - name: Checkout
